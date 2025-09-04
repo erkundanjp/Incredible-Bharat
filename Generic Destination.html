@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ Destination Name }} | Bharat Ko Janiye</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+
+  <!-- Hero Section -->
+  <section class="relative bg-cover bg-center h-[70vh]" style="background-image: url('{{ Hero Image URL }}');">
+    <div class="absolute inset-0 bg-black/50 flex justify-center items-center text-center text-white px-4">
+      <div>
+        <h1 class="text-5xl font-bold mb-4">{{ Destination Name }}</h1>
+        <p class="text-lg max-w-2xl">{{ Short Catchy Tagline }}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Info -->
+  <section class="py-12 px-6 max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold mb-6">Quick Information</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white shadow rounded-xl p-6">
+        <h3 class="font-semibold text-lg">📍 Location</h3>
+        <p class="text-gray-600 mt-2">{{ Location Details }}</p>
+      </div>
+      <div class="bg-white shadow rounded-xl p-6">
+        <h3 class="font-semibold text-lg">🕒 Best Time to Visit</h3>
+        <p class="text-gray-600 mt-2">{{ Best Time Range }}</p>
+      </div>
+      <div class="bg-white shadow rounded-xl p-6">
+        <h3 class="font-semibold text-lg">🚆 How to Reach</h3>
+        <p class="text-gray-600 mt-2">
+          ✈️ {{ Nearest Airport }} <br>
+          🚆 {{ Nearest Railway Station }} <br>
+          🚗 {{ Road/Bus Connectivity Info }}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- History -->
+  <section class="py-12 px-6 bg-gray-100">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">History & Significance</h2>
+      <p class="text-gray-700 leading-relaxed">
+        {{ Write a short but engaging story about the place’s history, cultural importance, or why it’s famous. }}
+      </p>
+    </div>
+  </section>
+
+  <!-- Things to Do -->
+  <section class="py-12 px-6 max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold mb-6">Things to Do</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white shadow rounded-xl p-6">
+        <h3 class="font-semibold text-xl mb-2">{{ Attraction 1 }}</h3>
+        <p class="text-gray-600">{{ Short description of Attraction 1 }}</p>
+      </div>
+      <div class="bg-white shadow rounded-xl p-6">
+        <h3 class="font-semibold text-xl mb-2">{{ Attraction 2 }}</h3>
+        <p class="text-gray-600">{{ Short description of Attraction 2 }}</p>
+      </div>
+      <div class="bg-white shadow rounded-xl p-6">
+        <h3 class="font-semibold text-xl mb-2">{{ Attraction 3 }}</h3>
+        <p class="text-gray-600">{{ Short description of Attraction 3 }}</p>
+      </div>
+      <div class="bg-white shadow rounded-xl p-6">
+        <h3 class="font-semibold text-xl mb-2">{{ Attraction 4 }}</h3>
+        <p class="text-gray-600">{{ Short description of Attraction 4 }}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="py-12 px-6 bg-gray-100">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6">Photo Gallery</h2>
+      <div class="grid md:grid-cols-3 gap-4">
+        <img src="{{ Image URL 1 }}" class="rounded-xl shadow object-cover h-56 w-full" alt="{{ Alt Text 1 }}">
+        <img src="{{ Image URL 2 }}" class="rounded-xl shadow object-cover h-56 w-full" alt="{{ Alt Text 2 }}">
+        <img src="{{ Image URL 3 }}" class="rounded-xl shadow object-cover h-56 w-full" alt="{{ Alt Text 3 }}">
+      </div>
+    </div>
+  </section>
+
+  <!-- Travel Tips -->
+  <section class="py-12 px-6 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold mb-4">Travel Tips</h2>
+    <ul class="list-disc list-inside text-gray-700 space-y-2">
+      <li>{{ Tip 1 }}</li>
+      <li>{{ Tip 2 }}</li>
+      <li>{{ Tip 3 }}</li>
+      <li>{{ Tip 4 }}</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6 mt-12">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center px-6">
+      <p>&copy; 2025 Bharat Ko Janiye. All Rights Reserved.</p>
+      <div class="flex gap-4 mt-4 md:mt-0">
+        <a href="#" class="hover:text-yellow-500">Facebook</a>
+        <a href="#" class="hover:text-yellow-500">Instagram</a>
+        <a href="#" class="hover:text-yellow-500">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
